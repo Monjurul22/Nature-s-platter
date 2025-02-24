@@ -2,10 +2,26 @@ script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            clifford: '#da373d',
-          }
-        }
+          fontFamily: {
+            sora: ['sora', 'serif'],
+            poppins: ["Poppins", "serif"],
+          },
+
+          
+        },
+        plugins: [
+          require('daisyui'),
+        ],
+        daisyui: {
+          themes: [
+            {
+              mytheme: {
+                primary: '#ffffff',
+              },
+            },
+          ],
+        },
+
       }
     }
   </script>
